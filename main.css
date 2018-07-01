@@ -1,10 +1,10 @@
 /* variables */
 
 :root {
-    --primary: #ddd;
+    --primary: #dfdfdf;
     --dark: #333;
     --light: #fff;
-    --shadow: 0 1px 5px rgba(100, 100, 100, 0, 75);
+    --shadow: 0 1px 5px rgba(100, 100, 100, 0.55);
 }
 
 html {
@@ -29,4 +29,31 @@ body {
 
 img {
     max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* navigation */
+
+.navigation__menu {
+    display: grid;
+    grid-gap: 1.5em;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.navigation__link {
+    text-decoration: none;
+    display: block;
+    background: var(--primary);
+    padding: 0.6em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark);
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
 }
